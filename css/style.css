@@ -10,6 +10,7 @@
     --lighblue: #1B72E8;
     --darkblue: #165BBA;
     --grey: #E5E5E5;
+    --lightgrey: #F7F7F7;
     --white: #FFFFFF;
     --orange: #FF8F00;
     --darkorange: #F26551;
@@ -35,6 +36,15 @@
 
 .badge{
     background-color: var(--darkblue);
+}
+
+.title{
+    background-color: var(--lightgrey);
+    border: 1px solid var(--grey);
+}
+
+.tabel{
+    border: 1px solid var(--grey);
 }
 
 
