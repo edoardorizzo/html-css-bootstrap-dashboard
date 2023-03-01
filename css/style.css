@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilities */
+:root{
+    --dark-sidebar: #142A40;
+    --lighblue: #1B72E8;
+    --darkblue: #165BBA;
+    --grey: #E5E5E5;
+    --white: #FFFFFF;
+    --orange: #FF8F00;
+    --darkorange: #F26551;
+    --green: #1C8856;
+    --yellow: #FFC107;
+    --red: #DC3545;
+}
+
+
+/* header */
+.header{
+    background-color: var(--grey);
+}
+
+.sidebar{
+    background-color: var(--dark-sidebar);
+}
+
+/* jumbotron */
+.jumbotron{
+    background-color: var(--lighblue);
+}
+
+.badge{
+    background-color: var(--darkblue);
+}
+
+
+/* mediaquery */
+
+@media screen and (min-width:576px) {
+    .new_student{
+        order: 3;
+    }
+
+    .bolean{
+        order: 1;
+    }
+
+    .online{
+        order: 2;
+    }
+    
+    
+}
