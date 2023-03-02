@@ -18,7 +18,7 @@
     </head>
     <body>
 
-        <div class="header py-3 d-flex">
+        <header class="d-flex">
             <nav class="navbar navbar-light bg-light p-2 w-100">
                 <a class="navbar-brand col-1 col-md-2 m-0" href="#">
                   <img class="mobile_logo" src="img/mobile-logo.png" width="40" height="40" alt="">
@@ -35,9 +35,9 @@
                 </ul>
             </nav>
             
-        </div>
+        </header>
 
-        <div class="main">
+        <main>
             <div class="container-fluid">
                 <div class="row flex-nowrap">
                     <div class="sidebar col-auto px-sm-2 px-0 d-flex flex-column justify-content-between">
@@ -78,16 +78,119 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col p-0">
+                    <div class="main col p-0">
                         <div class="top">
                             <div class="jumbotron jumbotron-fluid text-light mb-3">
                                 <div class="row container p-2 m-0">
-                                    <div class="new_student my-2 col-12 col-sm-3 text-right d-flex justify-content-end">
-                                        <div class="student_box">
-                                            <span>Nuovo Studente </span>
-                                            <button type="button" class="border btn btn-outline text-light"><i class="fa-solid fa-plus"></i>
-                                            </button>
+                                    <div class="new_student my-2 col-12 col-sm-3 text-right">
+                                        <span>Nuovo Studente </span>
+                                        <button class="border btn btn-outline text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header text-dark">
+                                              <h5>Inserici un nuovo studente</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                              </button>
+                                            </div>
+                                            <div class="offcanvas-body text-dark">
+                                                <div class="row_1 d-flex">
+                                                    <div class="name col-6 me-2">
+                                                        <label for="basic-url" class="form-label">Nome</label>
+                                                        <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                        </div>
+                                                    </div>
+                                                    <div class="surname col-6">
+                                                        <label for="basic-url" class="form-label">Cognome</label>
+                                                        <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row_2 d-flex">
+                                                    <div class="email col-6 me-2">
+                                                        <label for="basic-url" class="form-label">Email</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="psw col-6">
+                                                        <label for="basic-url" class="form-label">Password</label>
+                                                        <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row_3 d-flex">
+                                                    <div class="email col-6 me-2">
+                                                        <label for="basic-url" class="form-label">Indirizzo Email</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="psw col-6">
+                                                        <label for="basic-url" class="form-label">Password</label>
+                                                        <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row_4 d-flex">
+                                                    <div class="address col-12">
+                                                        <label for="basic-url" class="form-label">Indirizzo</label>
+                                                        <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row_5 d-flex">
+                                                    <div class="city col-6 me-1">
+                                                        <label for="basic-url" class="form-label">Città</label>
+                                                        <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                        </div>
+                                                    </div>
+                                                    <div class="state col-4 me-1">
+                                                        <label for="basic-url" class="form-label">Stato</label>
+                                                        <select class="form-select" aria-label="Default select  example">
+                                                            <option selected>Scegli...</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="cap col-2">
+                                                        <label for="basic-url" class="form-label">CAP</label>
+                                                        <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row_6 d-flex">
+                                                    <div class="picture col-12">
+                                                        <label for="basic-url" class="form-label">Foto</label>
+                                                        <div class="picture input-group mb-3">
+                                                            <input type="file" class="form-control" id="inputGroupFile01">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="check mt-2">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="" value="option1">
+                                                        <label class="form-check-label" for="">Seleziona per proseguire</label>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons mt-3">
+                                                    <a class="btn btn-primary btn-sm " href="#"   role="button">Salva</a>
+                                                    <a class="btn btn-secondary btn-sm border-0 text-dark" href="#"   role="button">Svuota</a>
+                                                </div>
+                                            </div>
                                         </div>
+
+
                                     </div>
 
                                     <div class="boolean my-2 col-12 col-sm-6">
@@ -364,7 +467,7 @@
                 </div>
             </div>
 
-        </div>
+        </main>
 
         <!-- script -->
         <script

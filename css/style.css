@@ -21,8 +21,8 @@
 
 
 /* header */
-.header{
-    background-color: var(--grey);
+header{
+    height: 60px;
 }
 
 .navbar li{
@@ -42,15 +42,14 @@
     background-color: var(--grey);
 }
 
-.main{
-    display: flex;
-    height: calc(100vh - 80px);
+main{
+    height: calc(100vh - 60px);
     overflow-y: auto;
 }
 
+
 .sidebar{
     background-color: var(--dark-sidebar);
-    height: calc(100vh - 80px);
 }
 
 /* jumbotron */
@@ -60,6 +59,14 @@
 
 .badge{
     background-color: var(--darkblue);
+}
+
+.offcanvas.offcanvas-end{
+    width: 500px;
+}
+
+.btn-secondary{
+    background-color: var(--yellow);
 }
 
 .title{
