@@ -61,6 +61,10 @@ header{
     background-color: var(--lighblue);
 }
 
+.badge-pill{
+    background-color: var(--darkblue);
+}
+
 .badge-green{
     background-color: var(--green);
 }
@@ -97,6 +101,17 @@ header{
 
 .tabel{
     border: 1px solid var(--grey);
+}
+
+
+/* nimations */
+
+.badge-pill:hover {
+    background-color: var(--grey);
+}
+
+.sidebar_top .li:hover {
+    background-color: var(--lighblue);
 }
 
 
