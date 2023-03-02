@@ -11,6 +11,7 @@
     --darkblue: #165BBA;
     --grey: #E5E5E5;
     --lightgrey: #F7F7F7;
+    --darkgrey: #6C757D;
     --white: #FFFFFF;
     --orange: #FF8F00;
     --darkorange: #F26551;
@@ -70,6 +71,10 @@ header{
 
 .badge-red{
     background-color: var(--red);
+}
+
+.classes i{
+    color: var(--darkgrey);
 }
 
 
