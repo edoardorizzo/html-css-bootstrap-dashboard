@@ -42,9 +42,12 @@ header{
     background-color: var(--grey);
 }
 
-main{
-    height: calc(100vh - 60px);
+.main{
     overflow-y: auto;
+}
+
+#big_container{
+    height: calc(100vh - 60px);
 }
 
 
