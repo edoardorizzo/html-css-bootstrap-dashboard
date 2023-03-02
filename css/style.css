@@ -65,6 +65,10 @@ main{
     width: 500px;
 }
 
+.offcanvas .form-control{
+    background-color: white;
+}
+
 .btn-secondary{
     background-color: var(--yellow);
 }
@@ -92,6 +96,15 @@ main{
 
     .online{
         order: 2;
+    }
+
+    .row_1,
+    .row_2,
+    .row_3,
+    .row_4,
+    .row_5,
+    .row_6 {
+        display: flex;
     }
        
 }
@@ -121,6 +134,10 @@ main{
     
     .logo{
         display: none;
+    }
+
+    .offcanvas.offcanvas-end{
+        width: 100vw;
     }
 
 }

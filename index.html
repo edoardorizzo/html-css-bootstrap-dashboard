@@ -31,7 +31,15 @@
                     <li class="mr-2"><i class="fa-solid fa-list-ul"></i></li>
                     <li class="mr-2"><i class="fa-solid fa-circle-question"></i></li>
                     <li class="mr-2"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                    <li><i class="fa-solid fa-bell"></i></li>
+                    <li><i class="fa-solid fa-bell" id="dropdownMenuButton1" type="button"  data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Profilo</a></li>
+                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                              <li><a class="dropdown-item" href="#">Loguout</a></li>
+                            </ul>
+                        </div>
+                    </li>    
                 </ul>
             </nav>
             
@@ -94,51 +102,51 @@
                                               </button>
                                             </div>
                                             <div class="offcanvas-body text-dark">
-                                                <div class="row_1 d-flex">
-                                                    <div class="name col-6 me-2">
+                                                <div class="row_1">
+                                                    <div class="name col-12 col-sm-6 me-2">
                                                         <label for="basic-url" class="form-label">Nome</label>
                                                         <div class="input-group mb-3">
                                                         <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                                         </div>
                                                     </div>
-                                                    <div class="surname col-6">
+                                                    <div class="surname col-12 col-sm-6 ">
                                                         <label for="basic-url" class="form-label">Cognome</label>
                                                         <div class="input-group mb-3">
                                                         <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row_2 d-flex">
-                                                    <div class="email col-6 me-2">
+                                                <div class="row_2">
+                                                    <div class="email col-12 col-sm-6  me-2">
                                                         <label for="basic-url" class="form-label">Email</label>
                                                         <div class="input-group mb-3">
                                                             <span class="input-group-text" id="basic-addon1">@</span>
                                                             <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                                                         </div>
                                                     </div>
-                                                    <div class="psw col-6">
+                                                    <div class="psw col-12 col-sm-6 ">
                                                         <label for="basic-url" class="form-label">Password</label>
                                                         <div class="input-group mb-3">
                                                         <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row_3 d-flex">
-                                                    <div class="email col-6 me-2">
+                                                <div class="row_3">
+                                                    <div class="email col-12 col-sm-6  me-2">
                                                         <label for="basic-url" class="form-label">Indirizzo Email</label>
                                                         <div class="input-group mb-3">
                                                             <span class="input-group-text" id="basic-addon1">@</span>
                                                             <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                                                         </div>
                                                     </div>
-                                                    <div class="psw col-6">
+                                                    <div class="psw col-12 col-sm-6 ">
                                                         <label for="basic-url" class="form-label">Password</label>
                                                         <div class="input-group mb-3">
                                                         <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row_4 d-flex">
+                                                <div class="row_4">
                                                     <div class="address col-12">
                                                         <label for="basic-url" class="form-label">Indirizzo</label>
                                                         <div class="input-group mb-3">
@@ -146,14 +154,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row_5 d-flex">
-                                                    <div class="city col-6 me-1">
+                                                <div class="row_5">
+                                                    <div class="city col-12 col-sm-6 me-1">
                                                         <label for="basic-url" class="form-label">Città</label>
                                                         <div class="input-group mb-3">
                                                         <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                                         </div>
                                                     </div>
-                                                    <div class="state col-4 me-1">
+                                                    <div class="state col-12 col-sm-4 me-1">
                                                         <label for="basic-url" class="form-label">Stato</label>
                                                         <select class="form-select" aria-label="Default select  example">
                                                             <option selected>Scegli...</option>
@@ -162,14 +170,14 @@
                                                             <option value="3">Three</option>
                                                         </select>
                                                     </div>
-                                                    <div class="cap col-2">
+                                                    <div class="cap col-12 col-sm-2">
                                                         <label for="basic-url" class="form-label">CAP</label>
                                                         <div class="input-group mb-3">
                                                         <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row_6 d-flex">
+                                                <div class="row_6">
                                                     <div class="picture col-12">
                                                         <label for="basic-url" class="form-label">Foto</label>
                                                         <div class="picture input-group mb-3">
