@@ -60,9 +60,18 @@ header{
     background-color: var(--lighblue);
 }
 
-.badge{
-    background-color: var(--darkblue);
+.badge-green{
+    background-color: var(--green);
 }
+
+.badge-yellow{
+    background-color: #FFC107;
+}
+
+.badge-red{
+    background-color: var(--red);
+}
+
 
 .offcanvas.offcanvas-end{
     width: 500px;
