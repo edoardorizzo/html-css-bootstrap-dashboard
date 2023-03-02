@@ -25,8 +25,32 @@
     background-color: var(--grey);
 }
 
+.navbar li{
+    list-style: none;
+}
+
+.desktop_icons i{
+    display: none;
+}
+
+.desktop_icons .fa-bell{
+    display: inline;
+    color: var(--yellow);
+}
+
+.form-control {
+    background-color: var(--grey);
+}
+
+.main{
+    display: flex;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
 .sidebar{
     background-color: var(--dark-sidebar);
+    height: calc(100vh - 80px);
 }
 
 /* jumbotron */
@@ -62,13 +86,34 @@
     .online{
         order: 2;
     }
-    
-    
+       
 }
+
+@media screen and (min-width:768px) {
+    .mobile_logo{
+        display: none;
+    }
+
+    .desktop_icons i{
+        display: inline;
+    }
+       
+}
+
+
 
 @media screen and (max-width:575px) {
     .roi,
     .data{
         display: none;
     }
+
+}
+
+@media screen and (max-width:768px) {
+    
+    .logo{
+        display: none;
+    }
+
 }
