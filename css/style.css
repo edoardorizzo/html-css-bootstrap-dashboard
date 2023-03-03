@@ -114,6 +114,11 @@ header{
     background-color: var(--lighblue);
 }
 
+.badge:hover {
+    color: white;
+    opacity: 70%;
+}
+
 
 /* mediaquery */
 
